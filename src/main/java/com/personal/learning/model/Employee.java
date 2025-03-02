@@ -1,23 +1,20 @@
-package com.personal.learning.entity;
+package com.personal.learning.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.annotation.Collation;
 import org.springframework.data.mongodb.core.mapping.Document;
-
-import java.util.Date;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Document(collection = "products_collection")
-public class Product {
+public class Employee {
 
     @Id
     private String id;
+    private String empId;
     private String name;
-    private int quantity;
-    private double price;
-    private Date dob;
 }

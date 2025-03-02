@@ -1,20 +1,16 @@
-package com.personal.learning.dto;
+package com.personal.learning.model;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ProductDto {
+public class EmployeeDto {
 
     private String id;
+    private String empId;
     private String name;
-    private int quantity;
-    private double price;
-    private Date dob;
-
 }

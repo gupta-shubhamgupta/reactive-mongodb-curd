@@ -1,6 +1,7 @@
 spring:
   data:
     mongodb:
-      database: ProductsDB
-      host: localhost
-      port: 27017
+      uri: mongodb://localhost:27017/ProductsDB
+#      database: ProductsDB
+#      host: localhost
+#      port: 27017
