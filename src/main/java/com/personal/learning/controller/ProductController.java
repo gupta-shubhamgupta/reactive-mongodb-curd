@@ -16,7 +16,7 @@ public class ProductController {
 
     @GetMapping
     public Flux<ProductDto> products(){
-        System.out.println("Get");
+        System.out.println("Get Print");
         return productService.getProducts()
                 .map(productDto -> {
                     ProductDto p = new ProductDto();
